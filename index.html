@@ -1964,6 +1964,365 @@
 <!-- ═══════════════════════════════════════════════
      FOOTER
 ═══════════════════════════════════════════════ -->
+    <div style="margin-top:2rem;text-align:center"><a onclick="showPage('blog')" style="font-size:.85rem;color:var(--gris);cursor:pointer">← Retour au blog</a></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE: ACTUALITÉS
+═══════════════════════════════════════════════ -->
+<div class="page" id="pg-actualites">
+  <div class="service-hero">
+    <div class="container">
+      <div class="breadcrumb"><a onclick="showPage('accueil')">Accueil</a><span class="sep">›</span><span>Actualités</span></div>
+      <div class="eyebrow">Chaque semaine</div>
+      <h1 style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3rem);color:var(--rose-fonce)">L'actualité <em style="color:var(--rose)">immobilière</em></h1>
+      <p style="font-size:1rem;color:var(--gris);margin-top:1rem;max-width:540px;line-height:1.7">Taux, marché, réglementation, tendances — je décrypte chaque lundi les informations qui impactent votre projet immobilier en Essonne et en France.</p>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--creme)">
+    <div class="container">
+
+      <!-- FEATURED — dernier article (Make met à jour ce bloc) -->
+      <!-- FEATURED_ARTICLE_START -->
+      <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);margin-bottom:3rem;display:grid;grid-template-columns:1fr 1.4fr">
+        <div style="background:linear-gradient(135deg,var(--rose-fonce),var(--rose));padding:2.5rem;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden">
+          <div style="position:absolute;bottom:-20px;right:-20px;font-size:7rem;opacity:.08">📰</div>
+          <div>
+            <div style="font-size:.68rem;text-transform:uppercase;letter-spacing:.15em;color:var(--rose-clair);font-weight:700;margin-bottom:1rem">📰 Dernière actualité</div>
+            <div style="font-family:'DM Serif Display',serif;font-size:clamp(1.3rem,2.5vw,1.8rem);color:#fff;line-height:1.35">Les articles hebdomadaires arrivent bientôt !</div>
+          </div>
+          <div style="font-size:.78rem;color:rgba(255,255,255,.6);margin-top:1.5rem">Bientôt disponible · Jérémie Jund</div>
+        </div>
+        <div style="padding:2.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:1.25rem">
+          <div style="font-size:3rem;opacity:.3">🤖</div>
+          <div>
+            <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--rose-fonce);margin-bottom:.5rem">Votre veille immobilière automatique</div>
+            <p style="font-size:.85rem;color:var(--gris);line-height:1.7;max-width:380px">Chaque semaine, un article analysera l'actualité du marché immobilier français — taux, prix, réglementation — et sera publié ici automatiquement.</p>
+          </div>
+          <button class="btn btn-primary" onclick="showPage('estimation')">Estimer mon bien en attendant →</button>
+        </div>
+      </div>
+      <!-- FEATURED_ARTICLE_END -->
+
+      <!-- Archives -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div style="font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:var(--rose);font-weight:700;margin-bottom:.3rem">Archives</div>
+          <h2 style="font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--rose-fonce)">Tous les articles <em style="color:var(--rose)">précédents</em></h2>
+        </div>
+        <a href="https://www.facebook.com/people/J%C3%A9r%C3%A9mie-JUND-Proprietes-priveescom/100063620616661/" target="_blank" class="btn btn-outline" style="font-size:.78rem">👍 Suivre sur Facebook →</a>
+      </div>
+
+      <!-- ARTICLES_GRID_START -->
+      <div id="actu-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem">
+        <!-- Empty state — disparaît quand Make ajoute des articles -->
+        <div style="grid-column:1/-1;text-align:center;padding:3rem 2rem;color:var(--gris)">
+          <div style="font-size:3.5rem;margin-bottom:1rem;opacity:.3">📭</div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce);margin-bottom:.75rem">Les articles arrivent chaque lundi</div>
+          <p style="font-size:.9rem;line-height:1.7;max-width:460px;margin:0 auto 2rem">Cette section se remplira automatiquement semaine après semaine. Suivez la page Facebook pour être notifié à chaque publication.</p>
+          <a href="https://www.facebook.com/people/J%C3%A9r%C3%A9mie-JUND-Proprietes-priveescom/100063620616661/" target="_blank" class="btn btn-primary">Suivre la page Facebook →</a>
+        </div>
+      </div>
+      <!-- ARTICLES_GRID_END -->
+
+      <!-- Follow strip -->
+      <div style="background:#fff;border-radius:16px;padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-top:3rem;border:1px solid var(--rose-clair)">
+        <div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--rose-fonce);margin-bottom:.3rem">Ne manquez aucune actualité 📱</div>
+          <p style="font-size:.85rem;color:var(--gris)">Chaque lundi, le nouvel article est partagé sur Facebook.</p>
+        </div>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+          <a href="https://www.facebook.com/people/J%C3%A9r%C3%A9mie-JUND-Proprietes-priveescom/100063620616661/" target="_blank" class="btn btn-primary">👍 Suivre sur Facebook</a>
+          <a href="https://wa.me/33643758850" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="background:linear-gradient(135deg,var(--rose-fonce) 0%,var(--rose) 100%);border-radius:20px;padding:3rem 2.5rem;text-align:center;color:#fff">
+        <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:.75rem">Un projet immobilier en Essonne ?</h2>
+        <p style="font-size:.95rem;opacity:.85;max-width:520px;margin:0 auto 2rem">Quelle que soit l'actualité du marché, une estimation personnalisée reste le meilleur point de départ. Gratuite, sans engagement, sous 24h.</p>
+        <button class="btn" style="background:#fff;color:var(--rose);font-weight:700;margin-right:.75rem" onclick="showPage('estimation')">Estimer mon bien →</button>
+        <button class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.4)" onclick="showPage('contact')">Me contacter</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE: PARTENAIRES
+═══════════════════════════════════════════════ -->
+<div class="page" id="pg-partenaires">
+  <div class="service-hero">
+    <div class="container">
+      <div class="breadcrumb"><a onclick="showPage('accueil')">Accueil</a><span class="sep">›</span><span>Partenaires</span></div>
+      <div class="eyebrow">Réseau de confiance</div>
+      <h1 style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3rem);color:var(--rose-fonce)">Mes partenaires pour votre <em style="color:var(--rose)">projet</em></h1>
+      <p style="font-size:1rem;color:var(--gris);margin-top:1rem;max-width:540px;line-height:1.7">Des professionnels sélectionnés pour leur sérieux et leur expertise locale afin de vous accompagner à chaque étape de votre transaction.</p>
+    </div>
+  </div>
+
+  <div style="background:var(--rose-pale);border-bottom:1px solid var(--rose-clair);padding:1.25rem 5vw;text-align:center">
+    <p style="font-size:.9rem;color:var(--rose-fonce);max-width:680px;margin:0 auto">Chaque partenaire présenté ici a été <strong>personnellement évalué</strong> par Jérémie Jund. Je ne recommande que des professionnels en qui j'ai confiance pour mes propres clients.</p>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- ── COURTIERS ── -->
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
+        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">🏦</div>
+        <div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Courtiers en crédit immobilier</div>
+          <div style="font-size:.82rem;color:var(--gris)">Pour négocier les meilleures conditions de financement</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
+
+        <!-- Florian Foucault — Artémis Courtage -->
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">FF</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Florian Foucault</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Artémis Courtage</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Courtier en crédit immobilier, Florian accompagne vos clients dans l'obtention du meilleur financement — taux négociés, dossier optimisé, réponse rapide.</p>
+          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
+            <div>📞 <a href="tel:0651436684" style="color:var(--rose);font-weight:600">06 51 43 66 84</a></div>
+            <div>✉️ <a href="mailto:florian.foucault@artemiscourtage.com" style="color:var(--rose);font-weight:600">florian.foucault@artemiscourtage.com</a></div>
+          </div>
+        </div>
+
+        <!-- Frédéric Gimenez — CAFPI -->
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">FG</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Frédéric Gimenez</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">CAFPI</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Expert en financement immobilier chez CAFPI, Frédéric met à profit son réseau bancaire pour décrocher les meilleures conditions de prêt, même pour les profils complexes.</p>
+          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
+            <div>📞 <a href="tel:0699536612" style="color:var(--rose);font-weight:600">06 99 53 66 12</a></div>
+            <div>✉️ <a href="mailto:f.gimenez@cafpi.fr" style="color:var(--rose);font-weight:600">f.gimenez@cafpi.fr</a></div>
+          </div>
+        </div>
+
+        <!-- Conseil courtier -->
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Pourquoi un courtier ?</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;">En 2025, les taux varient de <strong>3,2 à 3,8 %</strong> selon votre profil. Un courtier peut vous faire économiser <strong>0,2 à 0,5 %</strong> de taux, soit plusieurs milliers d'euros sur la durée du prêt.</p>
+        </div>
+
+      </div>
+
+      <!-- ── NOTAIRES ── -->
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
+        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">⚖️</div>
+        <div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Notaires</div>
+          <div style="font-size:.82rem;color:var(--gris)">Pour sécuriser votre transaction et rédiger les actes authentiques</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
+
+        <!-- Maître Frédéric Labour -->
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">FL</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Maître Frédéric Labour</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Notaire</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Notaire de confiance, Maître Labour intervient pour la rédaction et la signature des compromis et actes authentiques de vente. Réactivité et rigueur au service de votre transaction.</p>
+          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
+            <div>📞 <a href="tel:0178849050" style="color:var(--rose);font-weight:600">01 78 84 90 50</a></div>
+            <div>🌐 <a href="https://www.notaires.fr/fr/notaire/frederic-labour" target="_blank" style="color:var(--rose);font-weight:600">Fiche notaires.fr →</a></div>
+          </div>
+        </div>
+
+        <!-- Conseil notaire -->
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Le rôle du notaire</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;">Le notaire intervient au compromis et à l'acte authentique. Un notaire réactif peut accélérer la transaction de plusieurs semaines. Je coordonne directement avec Maître Labour pour mes clients.</p>
+        </div>
+
+      </div>
+
+      <!-- ── DIAGNOSTIQUEURS ── -->
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
+        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">🔍</div>
+        <div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Diagnostiqueurs immobiliers</div>
+          <div style="font-size:.82rem;color:var(--gris)">DPE, amiante, plomb, électricité, gaz — les diagnostics obligatoires</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">DP</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Diag Précision</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Diagnostiqueur certifié</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Société de diagnostics immobiliers certifiée intervenant en Essonne. DPE, amiante, plomb, électricité, gaz, ERP — tous les diagnostics obligatoires réalisés rapidement pour ne pas retarder votre mise en vente.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.25rem">
+            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">DPE</span>
+            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">Amiante</span>
+            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">Électricité/Gaz</span>
+            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">ERP</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
+            <div>📞 <a href="tel:0169455508" style="color:var(--rose);font-weight:600">01 69 45 55 08</a></div>
+            <div>🌐 <a href="https://www.diagprecision.fr/" target="_blank" style="color:var(--rose);font-weight:600">www.diagprecision.fr →</a></div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Diagnostics obligatoires</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Pour vendre, le dossier doit inclure : DPE, amiante, plomb (avant 1949), électricité, gaz, ERP, assainissement. Je coordonne les rendez-vous avec Diag Précision pour mes clients — délais rapides, tarifs négociés.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem">
+            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">DPE</span>
+            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">Amiante</span>
+            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">Électricité/Gaz</span>
+            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">ERP</span>
+          </div>
+          <button class="btn btn-outline" style="font-size:.78rem;padding:.5rem 1rem" onclick="showPage('contact')">Me demander une mise en relation →</button>
+        </div>
+      </div>
+
+      <!-- ── ARTISANS ── -->
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
+        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">🔨</div>
+        <div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Artisans & Rénovation</div>
+          <div style="font-size:.82rem;color:var(--gris)">Rafraîchissement et home staging pour valoriser votre bien avant la vente</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
+        <!-- Mr Markosian -->
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">M</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">M. Markosian</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Artisan & Rénovation</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Artisan de confiance intervenant dans l'Essonne pour les travaux de rénovation, rafraîchissement et mise en valeur de votre bien avant la mise en vente.</p>
+          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
+            <div>📞 <a href="tel:0665734758" style="color:var(--rose);font-weight:600">06 65 73 47 58</a></div>
+          </div>
+        </div>
+
+        <!-- Ion Burlacu -->
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">IB</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Ion Burlacu</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Artisan & Rénovation</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Artisan polyvalent intervenant en Essonne pour tous vos travaux de rénovation, peinture et remise en état avant vente ou après acquisition.</p>
+          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
+            <div>📞 <a href="tel:0762969511" style="color:var(--rose);font-weight:600">07 62 96 95 11</a></div>
+            <div>✉️ <a href="mailto:burlacuion8328@gmail.com" style="color:var(--rose);font-weight:600">burlacuion8328@gmail.com</a></div>
+          </div>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Valoriser avant de vendre</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Un rafraîchissement ciblé (peinture, petites réparations) peut <strong>augmenter le prix de vente de 5 à 15 %</strong> et réduire le délai. Je conseille sur les travaux rentables et oriente vers des artisans fiables du secteur.</p>
+          <button class="btn btn-outline" style="font-size:.78rem;padding:.5rem 1rem" onclick="showPage('contact')">Me demander une mise en relation →</button>
+        </div>
+      </div>
+
+      <!-- ── DÉMÉNAGEURS ── -->
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
+        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">🚚</div>
+        <div>
+          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Déménageurs</div>
+          <div style="font-size:.82rem;color:var(--gris)">Pour un déménagement serein une fois la vente ou l'achat finalisé</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
+        <div style="background:var(--rose-pale);border:2px dashed var(--rose-clair);border-radius:16px;padding:1.75rem;text-align:center">
+          <div style="font-size:2.5rem;opacity:.5;margin-bottom:.75rem">🚚</div>
+          <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:700;margin-bottom:.5rem">Société de déménagement</div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.6">Partenaire à venir. Vous intervenez dans l'Essonne ?</p>
+          <a href="mailto:j.jund@proprietes-privees.com" style="display:inline-block;margin-top:1rem;font-size:.8rem;color:var(--rose);font-weight:600;border-bottom:1px solid var(--rose-clair)">Proposer un partenariat →</a>
+        </div>
+        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
+          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
+            <div>
+              <div style="font-weight:700;font-size:.95rem">Bien organiser son déménagement</div>
+              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
+            </div>
+          </div>
+          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Réservez votre déménageur <strong>4 à 6 semaines à l'avance</strong> après la signature du compromis. Les bons créneaux partent vite, surtout en fin de mois.</p>
+          <button class="btn btn-outline" style="font-size:.78rem;padding:.5rem 1rem" onclick="showPage('contact')">Me demander une mise en relation →</button>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div style="background:linear-gradient(135deg,var(--rose-fonce) 0%,var(--rose) 100%);border-radius:20px;padding:3rem 2.5rem;text-align:center;color:#fff">
+        <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:.75rem">Besoin d'une mise en relation ?</h2>
+        <p style="font-size:.95rem;opacity:.85;max-width:520px;margin:0 auto 2rem">Je vous recommande personnellement le professionnel le mieux adapté à votre projet. Gratuit, sans engagement.</p>
+        <a href="tel:0643758850" class="btn" style="background:#fff;color:var(--rose);font-weight:700;margin-right:.75rem">📞 06 43 75 88 50</a>
+        <button class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.4)" onclick="showPage('contact')">✉️ Écrire un message</button>
+      </div>
+
+    </div>
+  </section>
+</div>
+
 <footer>
   <div class="container">
     <div class="footer-grid">
@@ -2093,7 +2452,9 @@ const SEO = {
   'faq':          {t:'FAQ immobilier Sainte-Geneviève-des-Bois — Questions fréquentes',d:'Réponses aux questions fréquentes sur la vente et l\'achat immobilier à Sainte-Geneviève-des-Bois et en Essonne. Par Jérémie Jund, conseiller PP 91700.'},
   'services-neuf':{t:'Acheter dans le neuf en Essonne (91) — Jérémie Jund Propriétés Privées',d:'Investissez dans un programme immobilier neuf en Essonne avec Jérémie Jund. TVA réduite, PTZ, frais de notaire réduits — avantages et accompagnement complet.'},
   'services-pro': {t:'Locaux professionnels & commerciaux en Essonne — Jérémie Jund',d:'Achat, vente ou location de locaux professionnels, bureaux, fonds de commerce en Essonne (91). Jérémie Jund, conseiller immobilier d\'entreprise Propriétés Privées.'},
-  'services-location':{t:'Mettre son bien en location en Essonne — Gestion locative — Jérémie Jund',d:'Confiez la mise en location de votre bien à Jérémie Jund, conseiller immobilier à Sainte-Geneviève-des-Bois. Sélection locataire, bail, gestion complète en Essonne (91).'}
+  'services-location':{t:'Mettre son bien en location en Essonne — Gestion locative — Jérémie Jund',d:'Confiez la mise en location de votre bien à Jérémie Jund, conseiller immobilier à Sainte-Geneviève-des-Bois. Sélection locataire, bail, gestion complète en Essonne (91).'},
+  'actualites':    {t:'Actualités immobilières en Essonne — Jérémie Jund (91700)',d:'Toutes les actualités du marché immobilier français chaque semaine : taux, prix, réglementation. Décryptées par Jérémie Jund, conseiller immobilier à Sainte-Geneviève-des-Bois.'},
+  'partenaires':   {t:'Partenaires de confiance — Jérémie Jund Immobilier Essonne',d:'Courtiers, notaire, diagnostiqueur, artisans : les partenaires sélectionnés par Jérémie Jund pour accompagner votre projet immobilier à Sainte-Geneviève-des-Bois (91700).'}
 };
 
 // ── FAQPage JSON-LD par article ──
@@ -2135,7 +2496,7 @@ function showPage(id, pushHistory){
   if(pushHistory===undefined)pushHistory=true;
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   const pg=document.getElementById('pg-'+id);
-  if(pg){pg.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+  if(pg){pg.classList.add('active');setTimeout(()=>window.scrollTo({top:0,behavior:'smooth'}),10);}
   // SEO meta update
   const s=SEO[id]||SEO['accueil'];
   document.getElementById('page-title').textContent=s.t;
@@ -2861,358 +3222,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     <h2>FAQ — Vente immobilière à Sainte-Geneviève-des-Bois</h2>
     <div style="margin-top:1rem">
       <div style="margin-bottom:1.25rem;padding:1rem;background:var(--rose-pale);border-radius:8px"><strong>Combien de temps faut-il pour vendre une maison à Sainte-Geneviève-des-Bois ?</strong><p style="margin-top:.4rem;font-size:.88rem;color:var(--gris)">Un bien correctement estimé et bien présenté se vend en 6 à 10 semaines sur le secteur du 91700. Un bien surestimé peut rester plusieurs mois sans offre sérieuse.</p></div>
-      <div style="margin-bottom:1.25rem;padding:1rem;background:var(--rose-pale);border-radius:8px"><strong>Vaut-il mieux vendre avant d'acheter ou acheter avant de vendre en Essonne ?</strong><p style="mar
-
-<!-- ═══════════════════════════════════════════════
-     PAGE: ACTUALITÉS
-═══════════════════════════════════════════════ -->
-<div class="page" id="pg-actualites">
-  <div class="service-hero">
-    <div class="container">
-      <div class="breadcrumb"><a onclick="showPage('accueil')">Accueil</a><span class="sep">›</span><span>Actualités</span></div>
-      <div class="eyebrow">Chaque semaine</div>
-      <h1 style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3rem);color:var(--rose-fonce)">L'actualité <em style="color:var(--rose)">immobilière</em></h1>
-      <p style="font-size:1rem;color:var(--gris);margin-top:1rem;max-width:540px;line-height:1.7">Taux, marché, réglementation, tendances — je décrypte chaque lundi les informations qui impactent votre projet immobilier en Essonne et en France.</p>
+      <div style="margin-bottom:1.25rem;padding:1rem;background:var(--rose-pale);border-radius:8px"><strong>Vaut-il mieux vendre avant d'acheter ou acheter avant de vendre en Essonne ?</strong><p style="margin-top:.4rem;font-size:.88rem;color:var(--gris)">Vendre avant d'acheter est généralement recommandé pour éviter le double crédit. Un prêt-relais peut être une solution si vous trouvez le bien idéal avant d'avoir vendu.</p></div>
     </div>
-  </div>
-
-  <section class="section" style="background:var(--creme)">
-    <div class="container">
-
-      <!-- FEATURED — dernier article (Make met à jour ce bloc) -->
-      <!-- FEATURED_ARTICLE_START -->
-      <div style="background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--shadow-lg);margin-bottom:3rem;display:grid;grid-template-columns:1fr 1.4fr">
-        <div style="background:linear-gradient(135deg,var(--rose-fonce),var(--rose));padding:2.5rem;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden">
-          <div style="position:absolute;bottom:-20px;right:-20px;font-size:7rem;opacity:.08">📰</div>
-          <div>
-            <div style="font-size:.68rem;text-transform:uppercase;letter-spacing:.15em;color:var(--rose-clair);font-weight:700;margin-bottom:1rem">📰 Dernière actualité</div>
-            <div style="font-family:'DM Serif Display',serif;font-size:clamp(1.3rem,2.5vw,1.8rem);color:#fff;line-height:1.35">Les articles hebdomadaires arrivent bientôt !</div>
-          </div>
-          <div style="font-size:.78rem;color:rgba(255,255,255,.6);margin-top:1.5rem">Bientôt disponible · Jérémie Jund</div>
-        </div>
-        <div style="padding:2.5rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:1.25rem">
-          <div style="font-size:3rem;opacity:.3">🤖</div>
-          <div>
-            <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--rose-fonce);margin-bottom:.5rem">Votre veille immobilière automatique</div>
-            <p style="font-size:.85rem;color:var(--gris);line-height:1.7;max-width:380px">Chaque semaine, un article analysera l'actualité du marché immobilier français — taux, prix, réglementation — et sera publié ici automatiquement.</p>
-          </div>
-          <button class="btn btn-primary" onclick="showPage('estimation')">Estimer mon bien en attendant →</button>
-        </div>
-      </div>
-      <!-- FEATURED_ARTICLE_END -->
-
-      <!-- Archives -->
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;flex-wrap:wrap;gap:1rem">
-        <div>
-          <div style="font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:var(--rose);font-weight:700;margin-bottom:.3rem">Archives</div>
-          <h2 style="font-family:'DM Serif Display',serif;font-size:1.6rem;color:var(--rose-fonce)">Tous les articles <em style="color:var(--rose)">précédents</em></h2>
-        </div>
-        <a href="https://www.facebook.com/people/J%C3%A9r%C3%A9mie-JUND-Proprietes-priveescom/100063620616661/" target="_blank" class="btn btn-outline" style="font-size:.78rem">👍 Suivre sur Facebook →</a>
-      </div>
-
-      <!-- ARTICLES_GRID_START -->
-      <div id="actu-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem">
-        <!-- Empty state — disparaît quand Make ajoute des articles -->
-        <div style="grid-column:1/-1;text-align:center;padding:3rem 2rem;color:var(--gris)">
-          <div style="font-size:3.5rem;margin-bottom:1rem;opacity:.3">📭</div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce);margin-bottom:.75rem">Les articles arrivent chaque lundi</div>
-          <p style="font-size:.9rem;line-height:1.7;max-width:460px;margin:0 auto 2rem">Cette section se remplira automatiquement semaine après semaine. Suivez la page Facebook pour être notifié à chaque publication.</p>
-          <a href="https://www.facebook.com/people/J%C3%A9r%C3%A9mie-JUND-Proprietes-priveescom/100063620616661/" target="_blank" class="btn btn-primary">Suivre la page Facebook →</a>
-        </div>
-      </div>
-      <!-- ARTICLES_GRID_END -->
-
-      <!-- Follow strip -->
-      <div style="background:#fff;border-radius:16px;padding:2rem 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-top:3rem;border:1px solid var(--rose-clair)">
-        <div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.1rem;color:var(--rose-fonce);margin-bottom:.3rem">Ne manquez aucune actualité 📱</div>
-          <p style="font-size:.85rem;color:var(--gris)">Chaque lundi, le nouvel article est partagé sur Facebook.</p>
-        </div>
-        <div style="display:flex;gap:.75rem;flex-wrap:wrap">
-          <a href="https://www.facebook.com/people/J%C3%A9r%C3%A9mie-JUND-Proprietes-priveescom/100063620616661/" target="_blank" class="btn btn-primary">👍 Suivre sur Facebook</a>
-          <a href="https://wa.me/33643758850" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div style="background:linear-gradient(135deg,var(--rose-fonce) 0%,var(--rose) 100%);border-radius:20px;padding:3rem 2.5rem;text-align:center;color:#fff">
-        <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:.75rem">Un projet immobilier en Essonne ?</h2>
-        <p style="font-size:.95rem;opacity:.85;max-width:520px;margin:0 auto 2rem">Quelle que soit l'actualité du marché, une estimation personnalisée reste le meilleur point de départ. Gratuite, sans engagement, sous 24h.</p>
-        <button class="btn" style="background:#fff;color:var(--rose);font-weight:700;margin-right:.75rem" onclick="showPage('estimation')">Estimer mon bien →</button>
-        <button class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.4)" onclick="showPage('contact')">Me contacter</button>
-      </div>
-    </div>
-  </section>
-</div>
-
-
-<!-- ═══════════════════════════════════════════════
-     PAGE: PARTENAIRES
-═══════════════════════════════════════════════ -->
-<div class="page" id="pg-partenaires">
-  <div class="service-hero">
-    <div class="container">
-      <div class="breadcrumb"><a onclick="showPage('accueil')">Accueil</a><span class="sep">›</span><span>Partenaires</span></div>
-      <div class="eyebrow">Réseau de confiance</div>
-      <h1 style="font-family:'DM Serif Display',serif;font-size:clamp(2rem,4vw,3rem);color:var(--rose-fonce)">Mes partenaires pour votre <em style="color:var(--rose)">projet</em></h1>
-      <p style="font-size:1rem;color:var(--gris);margin-top:1rem;max-width:540px;line-height:1.7">Des professionnels sélectionnés pour leur sérieux et leur expertise locale afin de vous accompagner à chaque étape de votre transaction.</p>
-    </div>
-  </div>
-
-  <div style="background:var(--rose-pale);border-bottom:1px solid var(--rose-clair);padding:1.25rem 5vw;text-align:center">
-    <p style="font-size:.9rem;color:var(--rose-fonce);max-width:680px;margin:0 auto">Chaque partenaire présenté ici a été <strong>personnellement évalué</strong> par Jérémie Jund. Je ne recommande que des professionnels en qui j'ai confiance pour mes propres clients.</p>
-  </div>
-
-  <section class="section">
-    <div class="container">
-
-      <!-- ── COURTIERS ── -->
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
-        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">🏦</div>
-        <div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Courtiers en crédit immobilier</div>
-          <div style="font-size:.82rem;color:var(--gris)">Pour négocier les meilleures conditions de financement</div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
-
-        <!-- Florian Foucault — Artémis Courtage -->
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">FF</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Florian Foucault</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Artémis Courtage</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Courtier en crédit immobilier, Florian accompagne vos clients dans l'obtention du meilleur financement — taux négociés, dossier optimisé, réponse rapide.</p>
-          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
-            <div>📞 <a href="tel:0651436684" style="color:var(--rose);font-weight:600">06 51 43 66 84</a></div>
-            <div>✉️ <a href="mailto:florian.foucault@artemiscourtage.com" style="color:var(--rose);font-weight:600">florian.foucault@artemiscourtage.com</a></div>
-          </div>
-        </div>
-
-        <!-- Frédéric Gimenez — CAFPI -->
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">FG</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Frédéric Gimenez</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">CAFPI</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Expert en financement immobilier chez CAFPI, Frédéric met à profit son réseau bancaire pour décrocher les meilleures conditions de prêt, même pour les profils complexes.</p>
-          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
-            <div>📞 <a href="tel:0699536612" style="color:var(--rose);font-weight:600">06 99 53 66 12</a></div>
-            <div>✉️ <a href="mailto:f.gimenez@cafpi.fr" style="color:var(--rose);font-weight:600">f.gimenez@cafpi.fr</a></div>
-          </div>
-        </div>
-
-        <!-- Conseil courtier -->
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Pourquoi un courtier ?</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;">En 2025, les taux varient de <strong>3,2 à 3,8 %</strong> selon votre profil. Un courtier peut vous faire économiser <strong>0,2 à 0,5 %</strong> de taux, soit plusieurs milliers d'euros sur la durée du prêt.</p>
-        </div>
-
-      </div>
-
-      <!-- ── NOTAIRES ── -->
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
-        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">⚖️</div>
-        <div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Notaires</div>
-          <div style="font-size:.82rem;color:var(--gris)">Pour sécuriser votre transaction et rédiger les actes authentiques</div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
-
-        <!-- Maître Frédéric Labour -->
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">FL</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Maître Frédéric Labour</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Notaire</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Notaire de confiance, Maître Labour intervient pour la rédaction et la signature des compromis et actes authentiques de vente. Réactivité et rigueur au service de votre transaction.</p>
-          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
-            <div>📞 <a href="tel:0178849050" style="color:var(--rose);font-weight:600">01 78 84 90 50</a></div>
-            <div>🌐 <a href="https://www.notaires.fr/fr/notaire/frederic-labour" target="_blank" style="color:var(--rose);font-weight:600">Fiche notaires.fr →</a></div>
-          </div>
-        </div>
-
-        <!-- Conseil notaire -->
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Le rôle du notaire</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;">Le notaire intervient au compromis et à l'acte authentique. Un notaire réactif peut accélérer la transaction de plusieurs semaines. Je coordonne directement avec Maître Labour pour mes clients.</p>
-        </div>
-
-      </div>
-
-      <!-- ── DIAGNOSTIQUEURS ── -->
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
-        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">🔍</div>
-        <div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Diagnostiqueurs immobiliers</div>
-          <div style="font-size:.82rem;color:var(--gris)">DPE, amiante, plomb, électricité, gaz — les diagnostics obligatoires</div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">DP</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Diag Précision</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Diagnostiqueur certifié</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Société de diagnostics immobiliers certifiée intervenant en Essonne. DPE, amiante, plomb, électricité, gaz, ERP — tous les diagnostics obligatoires réalisés rapidement pour ne pas retarder votre mise en vente.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.25rem">
-            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">DPE</span>
-            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">Amiante</span>
-            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">Électricité/Gaz</span>
-            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">ERP</span>
-          </div>
-          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
-            <div>📞 <a href="tel:0169455508" style="color:var(--rose);font-weight:600">01 69 45 55 08</a></div>
-            <div>🌐 <a href="https://www.diagprecision.fr/" target="_blank" style="color:var(--rose);font-weight:600">www.diagprecision.fr →</a></div>
-          </div>
-        </div>
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Diagnostics obligatoires</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Pour vendre, le dossier doit inclure : DPE, amiante, plomb (avant 1949), électricité, gaz, ERP, assainissement. Je coordonne les rendez-vous avec Diag Précision pour mes clients — délais rapides, tarifs négociés.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem">
-            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">DPE</span>
-            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">Amiante</span>
-            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">Électricité/Gaz</span>
-            <span style="font-size:.7rem;font-weight:600;padding:.2rem .6rem;border-radius:20px;background:var(--rose-pale);color:var(--rose-fonce)">ERP</span>
-          </div>
-          <button class="btn btn-outline" style="font-size:.78rem;padding:.5rem 1rem" onclick="showPage('contact')">Me demander une mise en relation →</button>
-        </div>
-      </div>
-
-      <!-- ── ARTISANS ── -->
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
-        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">🔨</div>
-        <div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Artisans & Rénovation</div>
-          <div style="font-size:.82rem;color:var(--gris)">Rafraîchissement et home staging pour valoriser votre bien avant la vente</div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
-        <!-- Mr Markosian -->
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">M</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">M. Markosian</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Artisan & Rénovation</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Artisan de confiance intervenant dans l'Essonne pour les travaux de rénovation, rafraîchissement et mise en valeur de votre bien avant la mise en vente.</p>
-          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
-            <div>📞 <a href="tel:0665734758" style="color:var(--rose);font-weight:600">06 65 73 47 58</a></div>
-          </div>
-        </div>
-
-        <!-- Ion Burlacu -->
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem;color:var(--rose-fonce);border:1.5px solid var(--rose-clair)">IB</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Ion Burlacu</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Artisan & Rénovation</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Artisan polyvalent intervenant en Essonne pour tous vos travaux de rénovation, peinture et remise en état avant vente ou après acquisition.</p>
-          <div style="display:flex;flex-direction:column;gap:.4rem;font-size:.8rem;color:var(--gris)">
-            <div>📞 <a href="tel:0762969511" style="color:var(--rose);font-weight:600">07 62 96 95 11</a></div>
-            <div>✉️ <a href="mailto:burlacuion8328@gmail.com" style="color:var(--rose);font-weight:600">burlacuion8328@gmail.com</a></div>
-          </div>
-        </div>
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Valoriser avant de vendre</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Un rafraîchissement ciblé (peinture, petites réparations) peut <strong>augmenter le prix de vente de 5 à 15 %</strong> et réduire le délai. Je conseille sur les travaux rentables et oriente vers des artisans fiables du secteur.</p>
-          <button class="btn btn-outline" style="font-size:.78rem;padding:.5rem 1rem" onclick="showPage('contact')">Me demander une mise en relation →</button>
-        </div>
-      </div>
-
-      <!-- ── DÉMÉNAGEURS ── -->
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2rem;padding-bottom:1rem;border-bottom:2px solid var(--rose-pale)">
-        <div style="width:52px;height:52px;background:linear-gradient(135deg,var(--rose-fonce),var(--rose));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0;box-shadow:0 4px 16px rgba(237,22,81,.25)">🚚</div>
-        <div>
-          <div style="font-family:'DM Serif Display',serif;font-size:1.4rem;color:var(--rose-fonce)">Déménageurs</div>
-          <div style="font-size:.82rem;color:var(--gris)">Pour un déménagement serein une fois la vente ou l'achat finalisé</div>
-        </div>
-      </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3.5rem">
-        <div style="background:var(--rose-pale);border:2px dashed var(--rose-clair);border-radius:16px;padding:1.75rem;text-align:center">
-          <div style="font-size:2.5rem;opacity:.5;margin-bottom:.75rem">🚚</div>
-          <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:700;margin-bottom:.5rem">Société de déménagement</div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.6">Partenaire à venir. Vous intervenez dans l'Essonne ?</p>
-          <a href="mailto:j.jund@proprietes-privees.com" style="display:inline-block;margin-top:1rem;font-size:.8rem;color:var(--rose);font-weight:600;border-bottom:1px solid var(--rose-clair)">Proposer un partenariat →</a>
-        </div>
-        <div style="background:#fff;border:1px solid rgba(111,5,33,.08);border-radius:16px;padding:1.75rem;box-shadow:var(--shadow);position:relative;overflow:hidden">
-          <div style="position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--rose),var(--rose-med))"></div>
-          <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:1rem">
-            <div style="width:44px;height:44px;border-radius:10px;background:var(--rose-pale);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:1.5px solid var(--rose-clair)">💡</div>
-            <div>
-              <div style="font-weight:700;font-size:.95rem">Bien organiser son déménagement</div>
-              <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose);font-weight:600">Le conseil de Jérémie</div>
-            </div>
-          </div>
-          <p style="font-size:.84rem;color:var(--gris);line-height:1.65;margin-bottom:1.25rem">Réservez votre déménageur <strong>4 à 6 semaines à l'avance</strong> après la signature du compromis. Les bons créneaux partent vite, surtout en fin de mois.</p>
-          <button class="btn btn-outline" style="font-size:.78rem;padding:.5rem 1rem" onclick="showPage('contact')">Me demander une mise en relation →</button>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div style="background:linear-gradient(135deg,var(--rose-fonce) 0%,var(--rose) 100%);border-radius:20px;padding:3rem 2.5rem;text-align:center;color:#fff">
-        <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:.75rem">Besoin d'une mise en relation ?</h2>
-        <p style="font-size:.95rem;opacity:.85;max-width:520px;margin:0 auto 2rem">Je vous recommande personnellement le professionnel le mieux adapté à votre projet. Gratuit, sans engagement.</p>
-        <a href="tel:0643758850" class="btn" style="background:#fff;color:var(--rose);font-weight:700;margin-right:.75rem">📞 06 43 75 88 50</a>
-        <button class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.4)" onclick="showPage('contact')">✉️ Écrire un message</button>
-      </div>
-
-    </div>
-  </section>
-</div>
+</body>
+</html>
