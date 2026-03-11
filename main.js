@@ -1,4 +1,26 @@
 // ── ROUTER ──
+
+// ── GOOGLE ANALYTICS HELPERS ──
+function gaPageView(pageId) {
+  if(typeof gtag === 'undefined') return;
+  const s = SEO[pageId] || SEO['accueil'];
+  gtag('event', 'page_view', {
+    page_title: s.t,
+    page_location: window.location.origin + window.location.pathname + '#' + pageId,
+    page_path: '/#' + pageId
+  });
+}
+
+function gaEvent(eventName, params) {
+  if(typeof gtag === 'undefined') return;
+  gtag('event', eventName, params || {});
+}
+
+// Tracking clics boutons importants
+function trackCTA(label) {
+  gaEvent('cta_click', { cta_label: label });
+}
+
 // ── SEO/AEO DATA ──
 const SEO = {
   'accueil':      {t:'Estimer son appartement ou maison à Sainte-Geneviève-des-Bois — Jérémie Jund (91700)',d:'Estimez votre appartement ou maison à Sainte-Geneviève-des-Bois (91700) gratuitement sous 24h. Jérémie Jund, conseiller immobilier local — Propriétés Privées. ☎ 06 43 75 88 50.'},
@@ -74,6 +96,8 @@ function showPage(id, pushHistory){
   document.getElementById('page-desc').setAttribute('content',s.d);
   // FAQPage schema injection pour les articles
   if(id.startsWith('article-'))injectFAQSchema(id);
+  // ── GA4 : tracking navigation entre sections ──
+  gaPageView(id);
   // History management
   if(pushHistory){
     if(_navHistory[_navHistory.length-1]!==id)_navHistory.push(id);
@@ -155,6 +179,8 @@ function submitForm(e, id, formName){
     form.style.display = 'none';
     const s = document.getElementById(id);
     if(s){ s.style.display = 'block'; }
+    // ── GA4 : tracking soumission formulaire ──
+    gaEvent('form_submit', { form_name: formName });
   })
   .catch(() => {
     if(btn){ btn.disabled = false; btn.textContent = 'Envoyer mon message →'; }
@@ -181,6 +207,24 @@ window.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('.reveal').forEach(el=>{
     const r=el.getBoundingClientRect();
     if(r.top<window.innerHeight)el.classList.add('visible');
+  });
+
+  // ── GA4 : tracking page initiale au chargement ──
+  const initPage = (location.hash ? location.hash.replace('#','') : 'accueil');
+  gaPageView(initPage);
+
+  // ── GA4 : tracking clics sur numéros de téléphone ──
+  document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+    el.addEventListener('click', () => {
+      gaEvent('phone_click', { phone_number: el.getAttribute('href') });
+    });
+  });
+
+  // ── GA4 : tracking clics sur liens email ──
+  document.querySelectorAll('a[href^="mailto:"]').forEach(el => {
+    el.addEventListener('click', () => {
+      gaEvent('email_click', { email: el.getAttribute('href') });
+    });
   });
 });
 
